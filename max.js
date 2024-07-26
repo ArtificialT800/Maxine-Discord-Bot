@@ -1,6 +1,4 @@
 const Discord = require("discord.js");
-const { Client, Intents } = require("discord.js")
-const mySecret = process.env['DISCORD_BOT_TOKEN']
 const { Client, GatewayIntentBits } = require('discord.js'); // Import GatewayIntentBits
 
 const client = new Client({ 
@@ -9,6 +7,7 @@ const client = new Client({
         GatewayIntentBits.GuildMessages
     ] 
 });
+const mySecret = process.env['DISCORD_BOT_TOKEN']
 const readline = require('readline').createInterface({
   input: process.stdin,
   output: process.stdout
