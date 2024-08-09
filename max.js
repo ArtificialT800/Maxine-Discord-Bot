@@ -4,7 +4,8 @@ const { Client, GatewayIntentBits } = require('discord.js');
 const client = new Client({ 
     intents: [
         GatewayIntentBits.Guilds, 
-        GatewayIntentBits.GuildMessages
+        GatewayIntentBits.GuildMessages, 
+        GatewayIntentBits.MessageContent
     ] 
 });
 const mySecret = process.env['DISCORD_BOT_TOKEN']
