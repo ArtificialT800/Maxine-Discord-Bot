@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const { Client, GatewayIntentBits } = require('discord.js');
+const { Client, GatewayIntentBits, ActivityType } = require('discord.js');
 
 const client = new Client({ 
     intents: [
@@ -18,10 +18,10 @@ client.setMaxListeners(0);
 client.on("debug", (e) => console.log(e));
 client.on("ready", () => {
   console.log("Log In Successful!!");
-  client.user.setActivity('I\'m Stubborn', { type: "LISTENING" })
+  client.user.setActivity('I\'m Stubborn', { type: ActivityType.Listening });
 })
 
-client.on("message", (msg) => {
+client.on("messageCreate", (msg) => {
   const group = [
     'i am your mom maxine',
     'I\'m your mom maxine',
@@ -38,7 +38,7 @@ client.on("message", (msg) => {
 })
 
 
-client.on("message", (msg) => {
+client.on("messageCreate", (msg) => {
   const group = [
     'max chad',
     'maxine is chad',
@@ -52,7 +52,7 @@ client.on("message", (msg) => {
 })
 
 
-client.on("message", (msg) => {
+client.on("messageCreate", (msg) => {
   const group = [
     "maxine what's your onlyfans",
     "maxine do you have onlyfans?",
@@ -64,7 +64,7 @@ client.on("message", (msg) => {
   }
 })
 
-client.on("message", (msg) => {
+client.on("messageCreate", (msg) => {
   const dead_chat = [
     "What do you guys love the most? Like your hobbies et cetera",
     "Your favourite thing to do when you're alone?",
@@ -83,7 +83,7 @@ client.on("message", (msg) => {
   }
 })
 
-client.on("message", (msg) => {
+client.on("messageCreate", (msg) => {
   const wishes = [
     "Happy Birthday!!",
     "Bud, Happy Birthday ",
@@ -108,7 +108,7 @@ client.on("message", (msg) => {
   }
 })
 
-client.on("message", (msg) => {
+client.on("messageCreate", (msg) => {
   const group = [
     'who is your creator maxine',
     'who created you maxine',
@@ -131,7 +131,7 @@ client.on("message", (msg) => {
 
 
 
-client.on("message", (msg) => {
+client.on("messageCreate", (msg) => {
   const group = [
     'tell me a joke maxine',
     'maxine can you tell me a joke',
@@ -169,7 +169,7 @@ client.on("message", (msg) => {
 })
 
 
-client.on("message", (msg) => {
+client.on("messageCreate", (msg) => {
   const group = [
     'who is this maxine',
     'ayo who is this maxine',
@@ -197,7 +197,7 @@ client.on("message", (msg) => {
 })
 
 
-client.on("message", (msg) => {
+client.on("messageCreate", (msg) => {
   const group = [
     'maxine do you love me',
     'do you love me maxine',
@@ -210,7 +210,7 @@ client.on("message", (msg) => {
   }
 })
 
-client.on("message", (msg) => {
+client.on("messageCreate", (msg) => {
   const group = [
     'hello max',
     'hello maxine',
@@ -230,7 +230,7 @@ client.on("message", (msg) => {
   }
 })
 
-client.on("message", (msg) => {
+client.on("messageCreate", (msg) => {
   const group = [
     'Max',
     "maxine"
@@ -240,7 +240,7 @@ client.on("message", (msg) => {
   }
 })
 
-client.on("message", (msg) => {
+client.on("messageCreate", (msg) => {
   const group = [
     'bye maxine',
     'bye max',
@@ -250,7 +250,7 @@ client.on("message", (msg) => {
   }
 })
 
-client.on("message", msg => {
+client.on("messageCreate", msg => {
   const group = [
     'roast me',
     'maxine roast me',
@@ -337,7 +337,7 @@ client.on("message", msg => {
 })
 
 
-client.on("message", (msg) => {
+client.on("messageCreate", (msg) => {
   const group = [
     'i am going to take a break from discord',
     "i'm going to take a break from discord",
@@ -349,7 +349,7 @@ client.on("message", (msg) => {
   }
 })
 
-client.on("message", (msg) => {
+client.on("messageCreate", (msg) => {
   const group = [
     "Good night",
   ]
@@ -358,7 +358,7 @@ client.on("message", (msg) => {
   }
 })
 
-client.on("message", (msg) => {
+client.on("messageCreate", (msg) => {
   const group = [
     'tell me a fun fact maxine',
     'tell me a fun fact max',
@@ -375,7 +375,7 @@ client.on("message", (msg) => {
     "Fun Fact: Nothing is really lost…until mom can’t find it.",
     "Fun Fact: There is a technical name for the fear of long words.\nThe name is **hippopotomonstrosesquippedaliophobia**!!",
     "Fun Fact: Hot water will turn into ice faster than cold water.",
-    "Fun Fact: 	When the moon is directly overhead, you will weigh slightly less.",
+    "Fun Fact:  When the moon is directly overhead, you will weigh slightly less.",
     "Fun Fact: An Inheritance is just your relatives dropping their loot when they die.",
   ]
 
@@ -385,7 +385,7 @@ client.on("message", (msg) => {
   }
 })
 
-client.on("message", (msg) => {
+client.on("messageCreate", (msg) => {
   const replies = ["Awwwh No", '-', "!!", "Shoot", "Please No, Don't do this to me", "UWU, please don't", "You think I care? That's the funninest thing I've heard in a while", "IDGAF?", "Aww, Hear that?\nNotice that you can't hear anything? 'Cuz That's the sound of me caring"]
   const group = [
     'max i hate you',
