@@ -256,6 +256,7 @@ client.on("messageCreate", msg => {
     'maxine roast me',
     'roast me maxine',
     'max roast me',
+    'roast me max',
   ]
   if (group.includes(msg.content.toLowerCase())) {
     var roast_me = ["Were you born on the highway? That is where most accidents happen.", "If ignorance is bliss, you must be the happiest person on the planet.", "May I ask you to stop talking. It smells really bad.", "Your ass must be pretty jealous of all the shit that comes out of your mouth.", "Here’s a tissue, you have some shit on your lips", "Roses are red; violets are blue. I have five fingers, and the third one is for you.", "Being a dick won't make yours bigger.", "Imma beat your ass like a cherioke drum.", "Your Birth certificate is an Apology Letter from the condom factory.", "I thought of you today. It reminded me to take out the trash.", "You are so full of shit, the toilet’s jealous.", "You’re like the end pieces of a loaf of bread. Everyone touches you, but nobody wants you.", "Your face makes onions cry.", "I’d slap you but I don’t want to make your face look any better.", " You are the human version of period cramps.", "If your brain was dynamite, there wouldn’t be enough to blow your hat off.", "You are proof that evolution can go in reverse.", "I'd like to roast you, but it looks like God already did.",
